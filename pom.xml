@@ -18,7 +18,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <pmd.plugin.version>3.21.0</pmd.plugin.version>
+    <pmd.plugin.version>3.20.0</pmd.plugin.version>
   </properties>
 
   <dependencies>
