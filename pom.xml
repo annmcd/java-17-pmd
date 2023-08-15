@@ -22,7 +22,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <pmd.plugin.version>3.21.0</pmd.plugin.version>
     <!--sonar specific reports required by CLE-->
-    <sonar.java.checkstyle.reportPaths>/target/checkstyle-result.xml</sonar.java.checkstyle.reportPaths>
+    <sonar.java.checkstyle.reportPaths>target/checkstyle-result.xml</sonar.java.checkstyle.reportPaths>
   </properties>
 
   <dependencies>
