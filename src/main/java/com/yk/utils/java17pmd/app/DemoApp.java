@@ -40,5 +40,8 @@ public class DemoApp {
     String [] params = new String[3];
     Vulnerability obj = new Vulnerability();
     obj.callMe(params);
+
+
+
   }
 }
