@@ -142,7 +142,7 @@
       <plugin>
         <groupId>org.codehaus.sonar-plugins.java</groupId>
         <artifactId>sonar-jacoco-listeners</artifactId>
-        <version>${sonar-jacoco-listeners.version}</version>
+        <version>5.14.0.18788</version>
       </plugin>
       <plugin>
         <groupId>org.sonarsource.scanner.maven</groupId>
