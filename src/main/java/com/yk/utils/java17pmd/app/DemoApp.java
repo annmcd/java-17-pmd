@@ -1,9 +1,12 @@
 package com.yk.utils.java17pmd.app;
 
 import com.yk.utils.java17pmd.app.core.SomeClass;
+import com.yk.utils.java17pmd.app.core.Vulnerability;
 import com.yk.utils.java17pmd.app.utils.NumberUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.io.IOException;
 
 // UnusedImports
 //  import java.util.ArrayList;
@@ -12,7 +15,7 @@ public class DemoApp {
 
   private static final Logger LOGGER = LogManager.getLogger(DemoApp.class);
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
     // a - ShortVariable
     int aVariable = 5;
 
@@ -34,5 +37,8 @@ public class DemoApp {
     int number = 10;
     String convertedNumber = NumberUtils.convertNumberToString(number);
     LOGGER.info("Converted number: {} is string: {}.", number, convertedNumber);
+    String [] params = new String[3];
+    Vulnerability obj = new Vulnerability();
+    obj.callMe(params);
   }
 }
