@@ -12,6 +12,8 @@
 
   <properties>
     <!--sonar properties these tell sonar where to pick the reports up from -->
+    <sonar.surefire.reportsPath>target/surefire-reports</sonar.surefire.reportsPath>
+    <sonar.jacoco.itReportPath></sonar.jacoco.itReportPath>
     <sonar.java.checkstyle.reportPaths>target/checkstyle-result.xml</sonar.java.checkstyle.reportPaths>
     <sonar.coverage.jacoco.xmlReportPaths>${project.reporting.outputDirectory}/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -136,6 +138,11 @@
           </execution>
         </executions>
 
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.sonar-plugins.java</groupId>
+        <artifactId>sonar-jacoco-listeners</artifactId>
+        <version>${sonar-jacoco-listeners.version}</version>
       </plugin>
       <plugin>
         <groupId>org.sonarsource.scanner.maven</groupId>
